@@ -30,8 +30,7 @@
        </thead>
        <tbody>
         <tr>
-         <td rowsplan="2">yellow</td>
-         <td>cyan</td>
+         <td rowspan="2" colspan="2">cyan</td>
          <td>magenta</td>
         </tr>
         <tr>
@@ -48,10 +47,63 @@
     </div>
 
     <div>
-     <form action=".php" methode="pest<!--d'get-->">
-      <tieldset>
+     <form action=".php" methode="get">
+      <input type="search" placeholder="search" name="search">
+      <input type="image" src="images/gaara.png" alt="" width="40px" height="auto">
+     </form>
+     <form action=".php" methode="post">
+      <fieldset>
+       <legend>your <abbr title="information">info</abbr></legend>
+       <label>user Name:<br><input type="text" placeholder="ex: phantombill" name="userName" maxlength="15" required></label><br>
+       <label>user Email:<br><input type="email" placeholder="ex: somthing@gmail.com" name="userEmail" maxlength="33" required></label><br>
+       <label>password:<br><input type="password" placeholder="ex: somThing$992" maxlength="20" name="userPassword" required></label><br>
+       <label>user Website:<br><input type="url" placeholder="ex: sub.address.domain" name="userWebsite"></label><br>
+       <label>user picture:<br><input type="file" name="userImage"></label><br>
       </fieldset>
-
+      <fieldset>
+       <legend>sex class</legend>
+       <label><input type="radio" value="m" name="sexClass">male</label>
+       <label><input type="radio" value="f" name="sexClass">female</label>
+       <label><input type="radio" value="o" name="sexClass">other</label>
+      </fieldset>
+      <fieldset>
+       <legend>your favorite pets</legend>
+       <label><input type="checkbox" value="none" name="pets">none</label>
+       <label><input type="checkbox" value="cats" name="pets">cats</label>
+       <label><input type="checkbox" value="dogs" name="pets">dogs</label><br>
+       <label><input type="checkbox" value="snakes" name="pets">snakes</label>
+       <label><input type="checkbox" value="mouses" name="pets">mouses</label>
+       <label><input type="checkbox" value="others" name="pets">others</label><br>
+       <label>favorite color<input type="color" name="petColor"></label>
+      </fieldset>
+      <fieldset>
+       <legend>more info about you</legend>
+       <label for="location">your location</label>
+       <select id="location" name="location">
+        <option value="us">us</option>
+        <option value="canada">canada</option>
+        <option value="uk">uk</option>
+        <option value="europe">europe</option>
+        <option value="china">china</option>
+        <option value="russia">russia</option>
+        <option value="africa">africa</option>
+        <option value="india">india</option>
+        <option value="anonymous" selected>anonymous</option>
+       </select><br>
+       <lebel for="languige">language</lebel>
+       <select id="language" name="language" multiple>
+        <option value="en" selected>english</option>
+        <option value="ch">chinese</option>
+        <option value="ru">russian</option>
+        <option value="hi">hindi</option>
+        <option value="fr">franch</option>
+        <option value="ar">arabic</option>
+       </select>
+      </fieldset>
+      <label>comment:<br><textarea placeholder="ex: we love dark mode" name="comment"></textarea></label><br>
+      <input type="hidden" value="somthing" name="i-dont-know">
+      <button type="submit"><img src="images/gaara.png" alt="" height="40px" width="auto">Submit</button>
+     </form>
     </div>
    
     <div>
